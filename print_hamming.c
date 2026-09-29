@@ -8,5 +8,7 @@ int main()
   printf("Enter the second string: "); 
   fgets(ram + 256, 256, stdin); 
   int distance = hamming(); 
- return 0; 
+  char* string1 = "Hamming Distance: %d\n"; 
+  printf(string1, distance); 
+ return 0;  
 }
